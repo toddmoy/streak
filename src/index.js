@@ -1,8 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Moment from "moment";
+import "./index.css";
+import Streak from "./Streak";
+import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let startingDate = Moment("2017-11-05");
+
+ReactDOM.render(
+  <Streak start={startingDate} />,
+  document.getElementById("root")
+);
 registerServiceWorker();

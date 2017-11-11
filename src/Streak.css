@@ -1,0 +1,46 @@
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #08247e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: row-wrap;
+  overflow-x: scroll;
+}
+
+.day {
+  flex: 1 0 200px;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.day:before,
+.day:after {
+  content: "";
+  width: 50px;
+  height: 200px;
+  background-color: #fdafa4;
+  border-radius: 2px;
+}
+
+.day:after {
+  transform: rotate(-90deg) translateY(-25px);
+}
+
+.day::before {
+  transform: translateX(25px);
+}
+
+.day:hover {
+  transform: scale3d(1.1, 1.1, 1.1) rotate(720deg);
+}

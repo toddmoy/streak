@@ -5,7 +5,7 @@ import "./index.css";
 import Streak from "./Streak";
 import registerServiceWorker from "./registerServiceWorker";
 
-let startingDate = Moment("2017-11-05");
+let startingDate = Moment("2017-11-06");
 
 ReactDOM.render(
   <Streak start={startingDate} />,

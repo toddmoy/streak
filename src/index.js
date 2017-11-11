@@ -11,4 +11,5 @@ ReactDOM.render(
   <Streak start={startingDate} />,
   document.getElementById("root")
 );
+
 registerServiceWorker();
